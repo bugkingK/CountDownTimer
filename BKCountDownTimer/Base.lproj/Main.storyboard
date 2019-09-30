@@ -24,6 +24,11 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="HgV-1w-ApR" secondAttribute="height" multiplier="1:1" id="c9d-SH-LNK"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Noc-QL-xPd" customClass="CircleTic" customModule="BKCountDownTimer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="266" width="246" height="246"/>
@@ -31,6 +36,11 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Noc-QL-xPd" secondAttribute="height" multiplier="1:1" id="u67-9k-XYz"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laT-Cf-3zd" customClass="CircleCount" customModule="BKCountDownTimer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="532" width="246" height="246"/>
@@ -38,6 +48,11 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="laT-Cf-3zd" secondAttribute="height" multiplier="1:1" id="hKT-kf-yj5"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <constraints>

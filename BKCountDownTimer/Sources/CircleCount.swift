@@ -10,6 +10,13 @@ import UIKit
 
 @IBDesignable
 public class CircleCount: CircleTic {
+    
+    //MARK:- 🔶 @IBInspectable
+    /// 라벨을 채우는 배경 색
+    @IBInspectable public var labelFillColor: UIColor? = UIColor.white
+    /// 라벨 색
+    @IBInspectable public var labelColor: UIColor? = UIColor.black
+    
 
     //MARK:- 🔶 @private
     /// 가운데 위치한 타이머
@@ -48,7 +55,9 @@ public class CircleCount: CircleTic {
         let timerCenter:CGPoint = CGPoint(x: centerPoint.x - radius/2, y: centerPoint.y - radius/2)
         self.lbMiddleTimer.frame = CGRect(x: timerCenter.x, y: timerCenter.y, width: radius, height: radius)
         self.lbMiddleTimer.layer.cornerRadius = radius/2
+        self.lbMiddleTimer.layer.backgroundColor = labelFillColor?.cgColor
         self.lbMiddleTimer.font = UIFont.boldSystemFont(ofSize: radius/4)
+        self.lbMiddleTimer.textColor = labelColor
         let nMinute = Int(minuteValue)
         self.lbMiddleTimer.text = nMinute < 10 ? "0\(nMinute):00" : "\(nMinute):00"
         self.addSubview(self.lbMiddleTimer)
