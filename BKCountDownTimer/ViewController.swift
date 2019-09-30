@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var vwCircle:CircleCount!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        vwCircle.startTimer(block: { (count, minute, second) in
+            print("\(minute) : \(second)")
+        }) {
+            print("complete")
+        }
     }
-
-
 }
 

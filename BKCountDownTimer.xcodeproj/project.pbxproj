@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		D211DF9C2341F2350056B6C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211DF9B2341F2350056B6C3 /* AppDelegate.swift */; };
-		D211DF9E2341F2350056B6C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211DF9D2341F2350056B6C3 /* SceneDelegate.swift */; };
 		D211DFA02341F2350056B6C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211DF9F2341F2350056B6C3 /* ViewController.swift */; };
 		D211DFA32341F2350056B6C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D211DFA12341F2350056B6C3 /* Main.storyboard */; };
 		D211DFA52341F2360056B6C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D211DFA42341F2360056B6C3 /* Assets.xcassets */; };
 		D211DFA82341F2360056B6C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D211DFA62341F2360056B6C3 /* LaunchScreen.storyboard */; };
+		D211DFB42341F2760056B6C3 /* CircleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211DFB02341F2760056B6C3 /* CircleTimer.swift */; };
+		D211DFB52341F2760056B6C3 /* CircleBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211DFB12341F2760056B6C3 /* CircleBase.swift */; };
+		D211DFB62341F2760056B6C3 /* CircleCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211DFB22341F2760056B6C3 /* CircleCount.swift */; };
+		D211DFB72341F2760056B6C3 /* CircleTic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211DFB32341F2760056B6C3 /* CircleTic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D211DF982341F2350056B6C3 /* BKCountDownTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BKCountDownTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D211DF9B2341F2350056B6C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D211DF9D2341F2350056B6C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D211DF9F2341F2350056B6C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D211DFA22341F2350056B6C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D211DFA42341F2360056B6C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D211DFA72341F2360056B6C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D211DFA92341F2360056B6C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D211DFB02341F2760056B6C3 /* CircleTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTimer.swift; sourceTree = "<group>"; };
+		D211DFB12341F2760056B6C3 /* CircleBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleBase.swift; sourceTree = "<group>"; };
+		D211DFB22341F2760056B6C3 /* CircleCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleCount.swift; sourceTree = "<group>"; };
+		D211DFB32341F2760056B6C3 /* CircleTic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,8 @@
 		D211DF9A2341F2350056B6C3 /* BKCountDownTimer */ = {
 			isa = PBXGroup;
 			children = (
+				D211DFAF2341F2760056B6C3 /* Sources */,
 				D211DF9B2341F2350056B6C3 /* AppDelegate.swift */,
-				D211DF9D2341F2350056B6C3 /* SceneDelegate.swift */,
 				D211DF9F2341F2350056B6C3 /* ViewController.swift */,
 				D211DFA12341F2350056B6C3 /* Main.storyboard */,
 				D211DFA42341F2360056B6C3 /* Assets.xcassets */,
@@ -65,6 +71,17 @@
 				D211DFA92341F2360056B6C3 /* Info.plist */,
 			);
 			path = BKCountDownTimer;
+			sourceTree = "<group>";
+		};
+		D211DFAF2341F2760056B6C3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D211DFB02341F2760056B6C3 /* CircleTimer.swift */,
+				D211DFB12341F2760056B6C3 /* CircleBase.swift */,
+				D211DFB22341F2760056B6C3 /* CircleCount.swift */,
+				D211DFB32341F2760056B6C3 /* CircleTic.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D211DFB72341F2760056B6C3 /* CircleTic.swift in Sources */,
+				D211DFB52341F2760056B6C3 /* CircleBase.swift in Sources */,
 				D211DFA02341F2350056B6C3 /* ViewController.swift in Sources */,
+				D211DFB42341F2760056B6C3 /* CircleTimer.swift in Sources */,
+				D211DFB62341F2760056B6C3 /* CircleCount.swift in Sources */,
 				D211DF9C2341F2350056B6C3 /* AppDelegate.swift in Sources */,
-				D211DF9E2341F2350056B6C3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
