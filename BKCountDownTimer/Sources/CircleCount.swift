@@ -27,19 +27,20 @@ public class CircleCount: CircleTic {
     }
     
     public override func startTimer(block: @escaping (CGFloat, Int, Int) -> (), completion: @escaping () -> ()) {
-        super.startTimer(block: { [weak self] (count, minute, second) in
+        super.startTimer(block: { [weak self] (c, m, s) in
             guard let `self` = self else { return }
-            var v_minute:String = "\(minute)"
-            var v_second:String = "\(second)"
-            if minute < 10 {
-                v_minute = "0\(minute)"
+            var sM:String = "\(m)"
+            var sS:String = "\(s)"
+            if m < 10 {
+                sM = "0\(m)"
             }
             
-            if second < 10 {
-                v_second = "0\(second)"
+            if s < 10 {
+                sS = "0\(s)"
             }
-            let strCountDown:String = "\(v_minute):\(v_second)"
+            let strCountDown:String = "\(sM):\(sS)"
             self.lbMiddleTimer.text = strCountDown
+            block(c, m, s)
         }, completion: completion)
     }
     
