@@ -12,7 +12,7 @@ Copy <i>CircleBase.swift, CircleCount.swift, CircleTic.swift, CircleTimer.swift<
 </pre>
 
 ## Preview
-![](/img-preview.png)
+![](/img-prev.png)
 
 ## HowTo
 ![](/img-howto.png)
