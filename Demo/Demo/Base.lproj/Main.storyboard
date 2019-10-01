@@ -68,6 +68,7 @@
                     </view>
                     <connections>
                         <outlet property="vwCircle" destination="Ofr-27-vzd" id="xIT-cr-n0i"/>
+                        <outlet property="vwCircleTic" destination="BKB-br-vWE" id="q15-0d-hfD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

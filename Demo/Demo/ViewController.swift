@@ -12,6 +12,7 @@ import BKCountDownTimer
 class ViewController: UIViewController {
 
     @IBOutlet weak var vwCircle:CircleCount!
+    @IBOutlet weak var vwCircleTic:CircleTic!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +24,15 @@ class ViewController: UIViewController {
             print("complete")
         }
         
-        vwCircle.touchBeginEvent = {
+        vwCircleTic.touchBeginEvent = {
             print("touch")
         }
         
-        vwCircle.touchEndedEvent = {
+        vwCircleTic.touchEndedEvent = {
             print("end")
         }
         
-        vwCircle.touchMovedEvent = {
+        vwCircleTic.touchMovedEvent = {
             print("move")
         }
     }
