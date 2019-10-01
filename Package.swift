@@ -5,4 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "BKCountDownTimer",
+    targets: [
+        .target(
+           name: "BKCountDownTimer",
+           path: "BKCountDownTimer/Sources")
+    ]
 )
