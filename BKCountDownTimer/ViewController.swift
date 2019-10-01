@@ -21,6 +21,18 @@ class ViewController: UIViewController {
         }) {
             print("complete")
         }
+        
+        vwCircle.touchBeginEvent = {
+            print("touch")
+        }
+        
+        vwCircle.touchEndedEvent = {
+            print("end")
+        }
+        
+        vwCircle.touchMovedEvent = {
+            print("move")
+        }
     }
 }
 
