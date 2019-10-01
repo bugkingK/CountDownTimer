@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BKCountDownTimer"
-  s.version      = "0.0.5"
+  s.version      = "1.0.0"
   s.summary      = "Circle shaped countdown timer."
   s.description  = <<-DESC
 Circle shaped countdown timer. With Swift

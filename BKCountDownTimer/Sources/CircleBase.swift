@@ -46,6 +46,11 @@ public class CircleBase: UIView {
         }
     }
     
+    //MARK:- 🔶 @public
+    public var touchBeginEvent:(()->())? = nil
+    public var touchMovedEvent:(()->())? = nil
+    public var touchEndedEvent:(()->())? = nil
+    
     //MARK:- 🔶 @override
     override public func draw(_ rect: CGRect) {
         super.draw(rect)
@@ -63,8 +68,14 @@ public class CircleBase: UIView {
         self.drawCircle(time: minuteValue)
     }
     
+    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        touchBeginEvent?()
+    }
+    
     override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesMoved(touches, with: event)
+        touchMovedEvent?()
         guard let touch = self.getLastValue(touches) else {
             return
         }
@@ -77,6 +88,7 @@ public class CircleBase: UIView {
     
     override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
+        touchEndedEvent?()
         var finalAngle = m_end_angle
         if isAutoControl {
             let rest = finalAngle.truncatingRemainder(dividingBy: 6)
