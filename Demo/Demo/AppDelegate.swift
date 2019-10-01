@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  BKCountDownTimer
+//  Demo
 //
-//  Created by moon on 30/09/2019.
+//  Created by moon on 01/10/2019.
 //  Copyright © 2019 Bugking. All rights reserved.
 //
 

@@ -12,7 +12,7 @@ Circle shaped countdown timer. With Swift
   s.author       = { "bugkingK" => "myway0710@naver.com" }
   s.platform     = :ios, "10.0"
   s.source       = { :git => "https://github.com/bugkingK/CountDownTimer.git", :tag => "#{s.version}" }
-  s.source_files = "Classes", "BKCountDownTimer/Sources/**/*.{swift}"
+  s.source_files = "Classes", "Sources/**/*.{swift}"
 
   s.swift_version = '5.0'	
 
