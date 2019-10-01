@@ -8,6 +8,6 @@ let package = Package(
     targets: [
         .target(
            name: "BKCountDownTimer",
-           path: "BKCountDownTimer/Sources")
+           path: "BKCountDownTimer/Sources/.")
     ]
 )
